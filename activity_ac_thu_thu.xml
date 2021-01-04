@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcThuThu">
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/sr"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+        <Button
+            android:id="@+id/bntaddsach"
+            android:layout_width="96dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Thêm Sách"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listsachthuthu" />
+
+        <Button
+            android:id="@+id/bntxoasach"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Xóa Sách"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listsachthuthu" />
+
+        <ListView
+            android:id="@+id/listsachthuthu"
+            android:layout_width="406dp"
+            android:layout_height="423dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </ListView>
+
+        <Button
+            android:id="@+id/bntsuasach"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:text="Sửa Sách"
+            app:layout_constraintEnd_toStartOf="@+id/bntxoasach"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toEndOf="@+id/bntaddsach"
+            app:layout_constraintTop_toBottomOf="@+id/listsachthuthu" />
+
+        <Button
+            android:id="@+id/bntttlapphieu"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Lập Phiếu Mượn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntaddsach" />
+
+        <Button
+            android:id="@+id/bnntttrasach"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="Trả Sách"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntxoasach" />
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
